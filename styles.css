@@ -1,0 +1,21 @@
+
+
+
+
+
+a .fa-brands{
+    color: rgb(57, 59, 204);
+    font-size: 40px;
+    margin: 0 10px;
+    
+}
+
+header {
+    padding-top: 6rem + 3.5rem;
+    padding-bottom: 6rem;
+}
+
+.photo{
+    height: 140px;
+    margin: 5px;
+}
