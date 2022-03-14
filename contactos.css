@@ -100,29 +100,79 @@ header {
       margin-bottom: 20px;
   }
 
-  .form{
-    padding: 30px, 40px;
-  }
-  .form-control{
+  .header h2{
+    margin: 10px;
+    align-items: center;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
     margin-bottom: 10px;
     padding-bottom: 20px;
     position: relative;
 }
 
-.form-control i{
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control i {
     position: absolute;
-    right: 10px;
+    top: 50px;
+    right: 20px;
     visibility: hidden;
 }
 
-.form-control small{
+.form-control small {
     visibility: hidden;
     position: absolute;
     bottom: 0;
-    left: 10px;
+    left: 14px;
 }
 
-.form button{
+
+.form-control.correcto small{
+    visibility: hidden;
+}
+
+.form-control.correcto input {
+    border-color: rgb(115, 182, 16);
+}
+
+.form-control.incorrecto input {
+    border-color: rgb(235, 3, 3);
+}
+
+.form-control.form-control.correcto i.fa-check{
+    visibility: visible;
+    color: rgb(115, 182, 16);
+}
+
+.form-control.form-control.incorrecto i.fa-circle-exclamation{
+    visibility: visible;
+    color: rgb(235, 3, 3);
+}
+
+.form-control.incorrecto small {
+    visibility: visible;
+    color: rgb(235, 3, 3);
+}
+
+.form button {
     background-color: #8e44ad;
     border:  2px soild #8e44ad;
     font-size: 16px;
@@ -130,43 +180,4 @@ header {
     font-family: inherit;
     padding: 10px;
     width: 50%;
-}
-
-.form-control.correcto input{
-    border-color: lawngreen;
-}
-
-.form-control.incorrecto input{
-    border-color: red;
-}
-
-.form-control.correcto i.fa-check{
-    visibility: visible;
-    color: lawngreen;
-}
-
-.form-control.correcto small{
-  visibility: hidden;
-}
-
-.form-control.incorrecto i.fa-exclamation{
-    visibility: visible;
-    color: red;
-}
-
-.form-control.incorrecto small{
-    visibility: visible;
-    color: red;
-}
-
-.form-control pproy{
-  visibility: hidden;
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-}
-
-.form-control.incorrecto pproy{
-  visibility: visible;
-  color: red;
 }

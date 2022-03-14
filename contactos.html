@@ -7,7 +7,7 @@
     <title>Contactos</title>
     <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/000000/dynamite.png">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contactos.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,7 +39,7 @@
 
         <div class="Contact Cards">
           <!-- Three columns of text below the carousel -->
-          <div class="row">
+          <div class="row text-center">
             <div class="col-lg-4">
               <img src="img/PatricioSantos.JPG" class="photo rounded-circle">
               <h2 text-center> Patricio Santos</h2>
@@ -101,12 +101,41 @@
                 </ul>
               </div><!-- /.col-lg-4 -->
           </div><!-- /.row -->
-      
         </div>
+        <div class="container">
+          <div class="header">
+              <h1 class="display-1"> ¿Tienes algún comentario? <h1>
+              <h2>Déjanos tu correo y teléfono con tus comentarios y te contactaremos.</h2>
+          </div>
+          <form class="form" id="form">
+              <div class="form-control">
+                  <label>Email:</label>
+                  <input type="email" placeholder="user@domain.com" id="email">
+                  <i class="fa-solid fa-check"></i>
+                  <i class="fa-solid fa-exclamation"></i>
+                  <small>Mensaje de error</small>
+              </div>
+              <div class="form-control">
+                  <label>Teléfono:</label>
+                  <input type="tel" placeholder="1234567890" id="telefono">
+                  <i class="fa-solid fa-check"></i>
+                  <i class="fa-solid fa-exclamation"></i>
+                  <small>Mensaje de error</small>
+              </div>
+              <div class="form-control">
+                  <label>Comentarios:</label>
+                  <input type="text" placeholder= "Comentarios..." id="comentario">
+                  <i class="fa-solid fa-check"></i>
+                  <i class="fa-solid fa-exclamation"></i>
+                  <small>Mensaje de error</small>
+              </div>
+              <button>Enviar</button>
+          </form>
 
 </header>
-<script src="js/bootstrap.bundle.js"></script>
+<script src="contactos.js"></script>
 <script src="https://kit.fontawesome.com/9e9fc103d5.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

@@ -49,5 +49,39 @@
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="headerNews">
+            <h2>¿Estas interesado en saber más? Subcribete a nuestro News Letter.</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 my-4">
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>Nombre:</label>
+                <input type="text" placeholder="Jorge Ruiz" id="nombre">
+                <small>Mensaje de Error</small>
+            </div>
+            <div class="form-control">
+                <label>Correo:</label>
+                <input type="email" placeholder="jorgeR@domain.com" id="email">
+                <small>Mensaje de Error</small>
+            </div>
+            <div class="form-control">
+                <label>Estas interesado en conseguir noticias de nuestros futuros proyectos:</label>
+                <input type="checkbox" id="seguimiento" name="seguimiento">
+                <label for="seguimiento"> Si estoy interesado/a</label><br>
+            </div>
+            <div class="form-control">
+                <label>Aceptas los terminos y condiciones establecidos (sabemos que no lo vas a leer):</label>
+                <input type="radio" id="terminos" name="acceptar" value="true">
+                <label for="terminos">Si acepto</label>
+                <small>Mensaje de Error</small>
+            </div>
+            <input type="submit" value="Enviar">
+            <input type="reset">
+        </form>
+    </div>
+    </div>
+        <script src="newsletter.js"></script>
 </body>
 </html>
