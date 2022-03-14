@@ -23,7 +23,7 @@ function validarEntradas() {
 
     if (telefonoValue === ''){
         setErrorFor(telefono, "No se lleno el campo de teléfono");
-    } else if(!validarTelefono()){
+    } else if(!validarTelefono(telefono)){
         setErrorFor(telefono, 'Utilice el formato correcto');
     }else{
         setSuccessFor(telefono);
